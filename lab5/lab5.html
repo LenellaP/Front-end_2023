@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="ІП-з11, Приходько">
+    <meta name="description" content="about author">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form id="form">
+        <h2>Форма для заповнення</h2><br>
+        <label for="fullName">ПІБ</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Прізвище І. Б." pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ]+\s[A-Za-zА-Яа-яЁёІіЇїЄєҐґ].+\s[A-ZА-ЯЁІЇЄҐ]\." required><br>
+
+        <label for="workVariant">Варіант</label>
+        <input type="text" id="workVariant" name="workVariant" placeholder="xx" pattern="[0-9]{2}" required><br>
+
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xx-xx" oninput="formatPhoneNumber()" pattern="\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br>
+
+        <label for="faculty">Факультет</label>
+        <input type="text" id="faculty" name="faculty" placeholder="ТТТТ" pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ]+" required><br>
+
+        <label for="address">Адреса</label>
+        <input type="text" id="address" name="address" placeholder="м. Місто" pattern="м\.\s[A-Za-zА-Яа-яЁёІіЇїЄєҐґ]+" required><br>
+
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
+    <div id="displayContainer"></div>
+
+    
+<table border="1" id="myTable">
+    <caption>Таблиця 6x6</caption>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td id="cell7">7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>32</td>
+        <td>33</td>
+        <td>34</td>
+        <td>35</td>
+        <td>36</td>
+    </tr>
+</table><br>
+<div id="colorPickerContainer">
+    <label for="colorPicker">Виберіть колір: </label>
+    <input type="color" id="colorPicker">
+</div>
+
+</body>
+
+</html>
