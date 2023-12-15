@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.header {
+    background-color: #f2f2f2;
+    height: 20vh;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 40%; 
+    overflow: hidden;
+}
+
+.photo {
+    flex: 70%;
+    box-sizing: border-box;
+    background-color: blue;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    flex: 30%; 
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.footer {
+    background-color: #47aa7c;
+    flex-grow: 1; /* Займе залишок висоти */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.footer img {
+    max-height: 30vh; /* Максимальна висота для зображення */
+    width: auto; /* Автоматична ширина для забезпечення адаптивності */
+}
