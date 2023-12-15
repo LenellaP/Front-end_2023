@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+tr:first-child {
+    background-color: #778f8f;
+}
+tr:first-child td, tr:first-child th {
+    color: #FFC745; 
+}
+tr:nth-child(3) {
+    background-color: #f5f577;
+}
+tr:nth-child(3) td, tr:nth-child(3) th {
+    color: #000000; 
+}
+tr:first-child:hover {
+    background-color: #FFC745;
+}
+tr:first-child:hover td, tr:first-child:hover th {
+    color: #778f8f;
+}
+tr:nth-child(3):hover {
+    background-color: #000000;
+}
+tr:nth-child(3):hover td, tr:nth-child(3):hover th {
+    color: #f5f577;
+}
+
+table {
+    margin-bottom: 20px;
+    height: 30%;
+    width: 50%;
+
+}
+td {
+    height: 10%; /* Задати висоту ячейки */
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    background-color: #e4dada;
+    border: 2px solid #000;
+    border-radius: 15%;
+    position: relative;
+}
+
+.quarter {
+    width: 8%;
+    height: 8%;
+    background-color: #fa0808;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transform-origin: 50% 50%;
+}
+
+#one {
+    top: 5%;
+    left: 45%;
+    transform: rotate(45deg);
+}
+
+#two {
+    top: 45%;
+    left: 85%;
+    transform: rotate(135deg);
+}
+
+#three {
+    top: 85%;
+    left: 45%;
+    transform: rotate(-135deg);
+}
+
+#four {
+    top: 45%;
+    left: 5%;
+    transform: rotate(-45deg);
+}
+
+.arrow {
+    position: absolute;
+    background-color: #000;
+    transform-origin: 100% 100%;
+}
+
+.hour {
+    width: 2%;
+    height: 40%;
+    top: 10%;
+    left: 40%;
+    transform: rotate(90deg);
+}
+
+.minute {
+    width: 2%;
+    height: 50%;
+    top: 10%;
+    left: 49%;
+    transform: rotate(0deg);
+}
